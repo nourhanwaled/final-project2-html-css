@@ -1,0 +1,615 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+/*container*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*grid*/
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 28.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 49%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.row::after{
+    content="";
+    clear: both;
+    display: table;
+}
+.margin{
+    margin-top: 30px;
+}
+/*start of navbar*/
+nav h1{
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    margin-left: -20px;
+    margin-top: 17px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color:gray;
+    font-weight: bold;
+}
+nav ul li a:hover{
+color: aqua;
+}
+/*end of navbar*/
+/*start of header*/
+header{
+    clear: both;
+ background-image: url(../project2/images/intro-carousel/6.jpg);
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+header h1{
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 80px;
+    color:#000080;
+    text-align: center;
+}
+header .btn1{
+    position: absolute;
+    top:60%;
+    left: 40%;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    background-color:#000080;
+    color:white;
+    border: none;
+}
+header .btn1:hover{
+    border:2px solid #000080;
+    background-color: white;
+    color: #000080;
+    cursor: pointer;
+}
+header .btn2{
+    position: absolute;
+    top: 60%;
+    left: 51%;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aqua ;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+header .btn2:hover{
+    border:2px solid aqua;
+    background-color: white;
+    color: aqua;
+}
+/*end of header*/
+/*start of lorem*/
+.lorem img{
+    width: 560px;
+    height: 390px;
+}
+.lorem h1{
+    font-size: 40px;
+    color: #000080;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.lorem p{
+   color:gray;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.lorem .icon{
+    display: flex;
+}
+.lorem .icon i{
+    color:aqua;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.lorem .icon .p1{
+    color: #212F3D ;
+    font-style: normal;
+}
+/*end of lorem*/
+/*start of services*/
+.services{
+    clear: both;
+    margin-top: 600px;
+}
+.services .box{
+    box-shadow: 0 3px 10px gray;
+    margin-bottom: 20px;
+    margin-right: 12px;
+}
+.services hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.services h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.services p{
+    font-size: 20px;
+    color: #212F3D;
+}
+/*end of services*/
+/*start of CLIENTS*/
+.clients{
+    margin-top: 600px;
+}
+.clients hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.clients h1{
+    margin-bottom: 20px;
+    color: #000080;
+    font-size: 30px;
+}
+.clients p{
+    font-size: 20px;
+    color: #212F3D;
+    margin-bottom: 20px;
+}
+.clients .img{
+    margin-bottom: 30px;
+}
+/*end of CLIENTS*/
+/*start of PORTFOLIO*/
+.porto{
+    margin-top: 150px;
+}
+.porto hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.porto h1{
+    margin-bottom: 20px;
+    color: #000080;
+    font-size: 30px;
+}
+.porto p{
+    font-size: 20px;
+    color: #212F3D;
+    margin-bottom: 20px;
+}
+.porto .pic1 {
+    display: flex;
+    position: relative;
+}
+.porto .pic1 .img1{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    background-size: cover;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/1.jpg);
+}
+.porto .pic1 .img1:hover{
+    transform: scale(1.1);   
+}
+.porto .pic1 .img2{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    background-size: cover;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/2.jpg);
+}
+.porto .pic1 .img2:hover{
+    transform: scale(1.1);   
+}
+.porto .pic1 .img3{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: 0.7s;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/3.jpg);
+}
+.porto .pic1 .img4{
+    width: 25%;
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/4.jpg);
+}
+.porto .pic1 .img3:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    
+}
+.porto .pic1 .img4:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    
+}
+.porto .pic1 .img1 h1,.porto .pic1 .img2 h1,.porto .pic1 .img3 h1,.porto .pic1 .img4 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.porto .pic1 .img1{
+    overflow: hidden;
+}
+
+.porto .pic2 {
+    display: flex;
+    position: relative;
+}
+.porto .pic2 .img5{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    background-size: cover;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/4.jpg);
+}
+.porto .pic2 .img5:hover{
+    transform: scale(1.1);   
+}
+.porto .pic2 .img6{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    background-size: cover;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/5.jpg);
+}
+.porto .pic2 .img6:hover{
+    transform: scale(1.1);   
+}
+.porto .pic2 .img7{
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: 0.7s;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/6.jpg);
+}
+.porto .pic2 .img8{
+    width: 25%;
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../project2/images/portfolio/8.jpg);
+}
+.porto .pic2 .img7:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    
+}
+.porto .pic2 .img8:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    
+}
+.porto .pic2 .img5 h1,.porto .pic2 .img6 h1,.porto .pic2 .img7 h1,.porto .pic2 .img8 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.porto .pic1 .img1{
+    overflow: hidden;
+}
+/*start of PORTFOLIO*/
+/*start of test*/
+.test{
+    margin-top: 100px;
+}
+.textshadow{
+    text-align: center;
+    box-shadow: 0 3px 10px gray;
+    margin-right: 10px;
+    width: 390px;
+    margin-bottom: 20px;
+}
+.test hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.test h1{
+    margin-bottom: 20px;
+    color: #000080;
+    font-size: 30px;
+}
+.test p{
+    font-size: 20px;
+    color: #212F3D;
+    font-family: serif;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+.test .img1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.test h2{
+    font-weight: bold;
+}
+.test .p2{
+    color:gray;
+}
+.call{
+    clear: both;
+    background-color: #000080;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 500px;
+}
+.call h1{
+    padding-top: 30px;
+    color: white;
+}
+.call p{
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.call button{
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: #000080;
+    color: white;
+    cursor: pointer;
+}
+.call button:hover{
+    color: #000080;
+    background-color: white;
+    border: 2px solid white;
+}
+
+/*start of test*/
+/*start of our team*/
+.team{
+    margin-top: 100px;
+}
+.team hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.team h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #000080;
+}
+.team img {
+    width: 300px;
+    height: 300px;
+}
+.team .content{
+    background-color: aqua;
+    margin-top: -20px;
+    text-align: center;
+    height: 130px;
+    margin-left: 20px;
+}
+.team .content h1{
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.team .content p{
+    margin-top: -20px;
+    font-family: sans-serif;
+    color: #212F3D;
+    color: white;
+}
+.team .content i{
+    padding-right: 10px;
+    color: white;
+    margin-top: 20px;
+}
+/*end of our team*/
+/*start of contact*/
+.contact hr{
+    width: 100px;
+    height: 3px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+.contact{
+    margin-top: 600px;
+}
+.content{
+    clear: both;
+}
+.contact h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #000080;
+}
+.contact p{
+    font-size: 20px;
+    color: #212F3D;
+}
+.contact .col-4{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; 
+}
+.contact .left{
+    border-right:1px solid gray;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 65px;
+}
+.contact .col-4 i{
+    color: aqua;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact .col-4 h2{
+    color: gray;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+iframe{
+    width: 100%;
+}
+input[type="text"]{
+width:100%;
+height: 40px;
+padding:10px;
+}
+.sup input[type="text"]{
+    width:95.5%;
+    margin-left: 14px;
+    height: 40px;
+    padding: 10px;
+    }
+    textarea{
+        margin-left: 15px;
+        margin-top: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .btn5 button{
+        position: absolute;
+        left: 43%;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        color:white;
+        background-color: aqua;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 3px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: none;
+    }
+    .btn5 button:hover{
+        color: aqua;
+        background-color: white;
+        border: 2px solid aqua;
+    }
+/*end of contact*/
+/*start of footerz*/
+footer{
+    height: 100px;
+    clear: both;
+    text-align: center;
+    margin-top: 80px;
+    background-color:aliceblue;
+    position: relative;
+}
+footer p{
+top: 50%;
+padding-top: 30px;
+}
+/*end of footer*/
